@@ -21,6 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "prepare": "husky install",
     "lint:ts": "eslint \"src/**/*.{js,jsx,ts,tsx}*\" --cache --ignore-path .gitignore",
     "lint:ts:coverage": "yarn lint:ts -f json > coverage/eslint-report.json",
     "lint:ts:fix": "yarn lint:ts --fix"
