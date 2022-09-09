@@ -61,11 +61,12 @@ module.exports = {
     'react/require-default-props': 0,
     'import/no-unresolved': 0,
     'import/extensions': 0,
-    'react/function-component-definition': [
-      2,
+    "react/function-component-definition": [
+      "error",
       {
-        namedComponents: 'function-declaration',
-      },
+        "namedComponents": ["function-declaration", "arrow-function"],
+        "unnamedComponents": "arrow-function"
+      }
     ],
   },
   overrides: [

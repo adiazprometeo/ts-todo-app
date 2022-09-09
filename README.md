@@ -695,6 +695,8 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 npx husky add .husky/commit-msg \"npx --no -- commitlint --edit '$1'\"
 # or
 npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"
+
+
 ```
 
 Ahora intentemos confirmar nuestro código.

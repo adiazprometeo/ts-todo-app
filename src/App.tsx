@@ -3,7 +3,7 @@ import './App.css';
 
 import { TodoForm, TodoList } from './components';
 
-function App() {
+const App = () => {
   const [todos, setTodos] = useState<Array<Todo>>([]);
   const toggleComplete: ToggleComplete = selectedTodo => {
   const updatedTodos = todos.map(todo => {
