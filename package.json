@@ -10,9 +10,12 @@
     "@types/node": "^16.11.58",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.6",
+    "lodash.debounce": "^4.0.8",
+    "nanoid": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "typescript": "*",
     "web-vitals": "^2.1.4"
   },
@@ -24,7 +27,13 @@
     "prepare": "husky install",
     "lint:ts": "eslint \"src/**/*.{js,jsx,ts,tsx}*\" --cache --ignore-path .gitignore",
     "lint:ts:coverage": "yarn lint:ts -f json > coverage/eslint-report.json",
-    "lint:ts:fix": "yarn lint:ts --fix"
+    "lint:ts:fix": "yarn lint:ts --fix",
+    "commit": "git-cz"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
   },
   "eslintConfig": {
     "extends": [
@@ -47,8 +56,12 @@
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
     "@commitlint/config-conventional": "^17.1.0",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/styled-components": "^5.1.26",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.36.2",
+    "commitizen": "^4.2.5",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.1",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -60,6 +73,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.31.8",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-typescript-enum": "^2.1.0",
     "husky": "^8.0.1",
     "lint-staged": "^13.0.3",
     "prettier": "^2.7.1"

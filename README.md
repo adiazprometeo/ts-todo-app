@@ -695,8 +695,11 @@ npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 npx husky add .husky/commit-msg \"npx --no -- commitlint --edit '$1'\"
 # or
 npx husky add .husky/commit-msg "npx --no -- commitlint --edit $1"
+```
 
-
+```bash
+$> chmod +x .husky/commit-msg
+$> chmod +x .husky/pre-commit
 ```
 
 Ahora intentemos confirmar nuestro código.
@@ -729,6 +732,13 @@ module.exports = {
   trailingComma: 'all',
   arrowParens: 'avoid',
 };
+```
+
+Theme with styled-components and Typescript
+
+```bash
+yarn add styled-components
+yarn add @types/styled-components -D
 ```
 
 ## Bibliography

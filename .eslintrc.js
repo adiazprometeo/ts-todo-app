@@ -68,15 +68,19 @@ module.exports = {
         "unnamedComponents": "arrow-function"
       }
     ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
       rules: {
-        '@typescript-eslint/no-shadow': ['error'],
-        'no-shadow': 'off',
         'no-undef': 'off',
         semi: 'off',
+        "no-shadow": "off",
+        "@typescript-eslint/no-shadow": ["error"]
       },
     },
   ],
